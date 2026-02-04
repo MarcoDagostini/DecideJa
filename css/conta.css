@@ -1,0 +1,197 @@
+#card-conta {
+    background: #07306a;
+    border-radius: 28px;
+    width: 80vw;
+    max-width: 900px;
+    min-width: 320px;
+    min-height: 420px;
+    padding: 40px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 40px auto 0 auto;
+}
+
+#perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+#avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #fff;
+    object-fit: cover;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 18px;
+}
+
+#dados h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+#dados .email,
+#dados .tipo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#acoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    margin-right: 50%;
+}
+
+.acao {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.2s;
+}
+
+.acao i {
+    font-size: 28px;
+}
+
+.acao.editar {
+    justify-content: flex-end;
+}
+
+.acao:hover {
+    color: #b3d1ff;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -400px;
+    width: 400px;
+    height: 100%;
+    background: #092e5e;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    transition: left 0.3s;
+    z-index: 1001;
+    padding-top: 40px;
+    
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0 0 0 40px;
+    margin: 0;
+}
+
+#sidebar ul li {
+    margin: 40px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: background 0.2s;
+}
+
+#sidebar ul li a:hover {
+    background: #0a3a79;
+    border-radius: 8px;
+    padding-left: 8px;
+}
+
+#sidebar ul li i {
+    font-size: 36px;
+    margin-right: 8px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #092e5e;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+#overlay.active {
+    opacity: 0.45;
+    pointer-events: all;
+}
+
+@media (max-width: 700px) {
+    #card-conta {
+        padding: 20px 10px 15px 10px;
+        min-width: unset;
+    }
+    #perfil {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #avatar {
+        width: 140px;
+        height: 140px;
+    }
+    #dados {
+        margin-top: 0;
+        align-items: center;
+    }
+    #acoes {
+        flex-direction: column;
+        gap: 18px;
+        align-items: flex-start;
+    }
+    .acao.editar {
+        justify-content: flex-start;
+    }
+    #sidebar {
+        width: 80vw;
+        min-width: 220px;
+        padding-top: 20px;
+    }
+    #logo-titulo #titulo {
+        font-size: 28px;
+    }
+    header {
+        height: 60px;
+    }
+}

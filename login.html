@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecideJá - Login</title>
+    
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="div_login">
+        <div id="div_logotitulo">
+            <img id="logopequena" src="imagens/logopequenabranca.png">
+            <h1 style="font-size: 50px;">DecideJá</h1>
+        </div>
+        <form id="login">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="Digite seu e-mail...">
+            <label for="senha">Senha</label>
+            <div class="senha">
+                <input id="senha" type="password" placeholder="Digite sua senha...">
+                <i id="olho" class="fa fa-eye"></i>
+            </div>
+            <h4 id="esqueci" class="und" class="botao" onclick="window.location.href = 'inicio.html'">Esqueceu a senha?</h4>
+
+            <button type="button" id="enviar" class="botao">Login</button>
+
+            <h2>Ainda não tem uma conta?<a id="cadastre" class="und" class="botao" href="registro.html">Cadastre-se</a></h2>
+            <h2>Quer continuar sem login?<a id="cadastre" class="und" class="botao" href="index.html">Clique aqui</a></h2>
+            
+
+        </form>
+    </div>
+    
+</body>
+
+</html>
